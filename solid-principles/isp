@@ -1,0 +1,38 @@
+// Interface segregation principle
+
+class Phone{
+    constructor(){
+        if(this.constructor.name === 'Phone'){
+            throw new Error("Phone class is abstract")
+        }
+       
+    }
+
+    call(number){}
+    takephoto(number){}
+    connectwifi(number){}
+}
+
+class Iphone extends Phone(){
+    call(number){
+        //Implementation
+    }
+    takephoto(number){ 
+        //Implementation
+    }
+    connectwifi(number){
+        //Implementation
+    }
+}
+
+class Nokia extends Phone(){
+    call(number){
+        //Implementation
+    }
+    takephoto(number){ 
+        //Use less
+    }
+    connectwifi(number){
+        //Use less
+    }
+}
