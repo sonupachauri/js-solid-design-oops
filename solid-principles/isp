@@ -1,4 +1,5 @@
 // Interface segregation principle
+// a client should not be exposed to methods it doesn’t need
 
 class Phone{
     constructor(){
